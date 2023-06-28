@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__navegacao">
+            <a class="cabecalho__navegacao__link" href="">Calcular imc</a>
+            <a class="cabecalho__navegacao__link" href="">Tabela imc</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="apresentacao">
+            <h1 class="apresentacao__titulo">Cálculo IMC</h1>
+            <p class="apresentacao__texto">
+                IMC é a sigla para Índice de Massa Corporal, parâmetro adotado pela Organização Mundial de Saúde para
+                calcular o peso ideal de cada pessoa. O índice é calculado da seguinte maneira: divide-se o peso do
+                paciente pela sua altura elevada ao quadrado.
+            </p>
+        </section>
+
+        
+            <form class="calculo">
+                <div class="calculo__inputs">
+                    <div class="calculo__inputs__medidas">
+
+                        <div class="calculo__inputs__medidas__medida">
+                            <label class="label" for="altura">Digite sua altura (em m)</label>
+                            <input class="input" type="number" name="altura" id="altura" placeholder="Ex.: 1,75">
+                        </div>
+
+                        <div class="calculo__inputs__medidas__medida">
+                            <label class="label" for="peso">Digite seu peso (em kg)</label>
+                            <input class="input" type="number" name="peso" id="peso" placeholder="Ex.: 72">
+                        </div>
+
+                    </div>
+
+                    <button id="botao">Calcular</button>
+
+                </div>
+            </form>
+        
+
+        <section class="resultado">
+            <p class="resultado__paragrafo">Seu imc é:</p>
+            <p id="resultado__imc">Digite suas medidas!</p>
+            <p id="resultado__metrica"></p>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__texto">
+            desenvolvido por:
+        </p>
+        <p class="rodape__nome">
+            Eduardo Fettermann.
+        </p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
